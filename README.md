@@ -1,0 +1,2 @@
+# GoWorkshop
+Learn some Go!
