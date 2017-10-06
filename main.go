@@ -12,10 +12,18 @@ func main() {
 	// Shorthand variable declaration.
 	fruit := "carrot"
 
-	fmt.Println(a, animal, fruit)
+	// Multiple variable declaration.
+	number, boolean := 50, false
+
+	var (
+		x = 1
+		y = 2
+		z = "3"
+	)
+
+	fmt.Println(a, animal, fruit, number, boolean, x, y, z)
 }
 
 /*
-- Statically typed
-- Strongly typed
+- Statically and strongly typed.
 */
