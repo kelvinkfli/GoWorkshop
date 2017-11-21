@@ -1,0 +1,17 @@
+In Go, there is a concept of a "zero value".  When a variable is declared without
+a value, their initial value is implied using their zero value.
+
+Zero values for the following primitive types:
+- Numeric: 0
+- Strings: ""
+- Boolean: false
+_________________________________________________________________________________
+
+Go is both strongly and statically typed.
+
+Strongly typed:
+- once a variable has been assigned a type in Go, that type can never change.
+
+Statically typed:
+- type checking happens at compile-time instead of run-time. This means that
+  statements like: 5 + '10' will not compile.
