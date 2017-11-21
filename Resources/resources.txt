@@ -1,0 +1,5 @@
+Arrays, Slices:
+- https://blog.golang.org/go-slices-usage-and-internals
+
+Maps:
+- https://blog.golang.org/go-maps-in-action

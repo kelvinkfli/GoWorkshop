@@ -1,0 +1,35 @@
+The first line of every Go file begins with a package statement: "package ____"
+
+Some examples:
+- "package main"
+- "package twitter"
+- "package postgres"
+
+In Go, packages are a way for us to organize related code. It is common to have
+more than one file in your project with the same package declaration. This means
+that all the code between those files live in the package.
+_________________________________________________________________________________
+
+The "import" keyword imports code from other packages. Here we see that we are
+importing the "Println" method from the "fmt" package.  More on this later!
+_________________________________________________________________________________
+
+The "main" package houses our "func main()" and is the entry point to our program.
+When the compiler builds our Go code, it will translate the "main" package as an
+executable file, which can then be run.
+
+To try this, navigate to the "helloworld" directory in your terminal and run
+the following commands:
+
+1. "go build -o helloworld.bin main.go"
+2. "helloworld.bin"
+
+The first command is saying: build my program into an executable file. The 
+optional output flag ("-o") allows us to choose what we want to name that file.
+
+The second command simply runs that executable, printing our output.
+
+A shortcut for these two steps is to simply run this command:
+- "go run main.go"
+
+Under the hood, this command builds and runs the binary in a /tmp/* file.
