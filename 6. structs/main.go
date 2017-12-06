@@ -1,24 +1,8 @@
 package main
 
-import "fmt"
-
 // Sometimes, primitive types aren't enough to communicate what we want to do with a function or application.
 // Go's answer to this problem is the struct.  It can be seen as a custom type that groups other typed fields
 // together.
-type square struct {
-	Width  int
-	Length int
-}
 
-func main() {
-	var s square
-
-	s = square{
-		Width:  5,
-		Length: 5,
-	}
-
-	// Lets print out these fields!
-	fmt.Printf("width: %d \n", s.Width)
-	fmt.Printf("length: %d \n", s.Length)
-}
+// Lets make a struct that represents a "square".
+func main() {}

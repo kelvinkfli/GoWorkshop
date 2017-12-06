@@ -6,11 +6,7 @@ import (
 )
 
 func main() {
-	for i := 0; i < 10; i++ {
-		go asyncAction(i)
-	}
-
-	time.Sleep(5 * time.Second)
+	// Lets run some asynchronous action in a loop!
 }
 
 func asyncAction(iteration int) {

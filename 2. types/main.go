@@ -1,19 +1,11 @@
 package main
 
-import "fmt"
-
 func main() {
-	// A declaring a variable with a value.
-	var a string
+	// Declaring a variable without any value.
 
-	// Assign that variable a value.
-	a = "hello"
+	// Assign that variable some value.
 
 	// Declare a variable using shorthand declaration.
-	fruit := "pineapple"
 
 	// Declare multiple variables at once!
-	number, boolean := 55, true
-
-	fmt.Println(a, fruit, number, boolean)
 }

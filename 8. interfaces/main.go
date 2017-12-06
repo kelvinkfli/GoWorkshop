@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // Interfaces are another type, just like integers, strings, or defined structs. Instead of
 // having defining typed fields, we define method signatures.
 
@@ -15,16 +13,12 @@ func (s square) area() int {
 }
 
 type triangle struct {
-	Width  int
+	Base   int
 	Height int
 }
 
 func (t triangle) area() int {
-	return t.Width * t.Height / 2
-}
-
-type shape interface {
-	area() int
+	return t.Base * t.Height / 2
 }
 
 func main() {
@@ -33,17 +27,9 @@ func main() {
 		Length: 2,
 	}
 	t1 := triangle{
-		Width:  5,
+		Base:   5,
 		Height: 11,
 	}
 
-	largerShape := hasLargerArea(s1, t1)
-	fmt.Println(largerShape)
-}
-
-func hasLargerArea(s1 shape, s2 shape) shape {
-	if s1.area() > s2.area() {
-		return s1
-	}
-	return s2
+	// Lets write a function that compares the area of two shapes!
 }
