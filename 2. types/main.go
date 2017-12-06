@@ -3,14 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	// A declared variable of type 'string' without a value.
+	// A declaring a variable with a value.
 	var a string
 
-	// Shorthand variable declaration with type inference.
+	// Assign that variable a value.
+	a = "hello"
+
+	// Declare a variable using shorthand declaration.
 	fruit := "pineapple"
 
-	// Multiple variable declaration.
-	number, boolean := 50, false
+	// Declare multiple variables at once!
+	number, boolean := 55, true
 
 	fmt.Println(a, fruit, number, boolean)
 }

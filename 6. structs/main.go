@@ -10,10 +10,6 @@ type square struct {
 	Length int
 }
 
-func (s square) area() int {
-	return s.Length * s.Width
-}
-
 func main() {
 	var s square
 
@@ -25,8 +21,4 @@ func main() {
 	// Lets print out these fields!
 	fmt.Printf("width: %d \n", s.Width)
 	fmt.Printf("length: %d \n", s.Length)
-
-	// Let call the "area" method on our square.
-	area := s.area()
-	fmt.Printf("area: %d \n", area)
 }

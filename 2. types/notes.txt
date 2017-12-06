@@ -15,3 +15,5 @@ Strongly typed:
 Statically typed:
 - type checking happens at compile-time instead of run-time. This means that
   statements like: 5 + '10' will not compile.
+_________________________________________________________________________________
+

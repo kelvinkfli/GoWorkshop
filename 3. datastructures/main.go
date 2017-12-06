@@ -5,12 +5,14 @@ import (
 )
 
 func main() {
-	// Slices (arrays).
+	// Slices.
 	var animals []string
 	animals = []string{"gophers", "cats", "dogs"}
 
+	// Let append some animals to this slice.
 	animals = append(animals, "llamas")
 
+	// Loop over the slice we just made.
 	for i := 0; i < len(animals); i++ {
 		a := animals[i]
 		fmt.Println(a)
@@ -24,8 +26,10 @@ func main() {
 		"pears":   3,
 	}
 
+	// Lets add a new key/value pair to the map.
 	fruits["pineapples"] = 99
 
+	// Loop over the map we just made.
 	for key, value := range fruits {
 		fmt.Println(key, value)
 	}

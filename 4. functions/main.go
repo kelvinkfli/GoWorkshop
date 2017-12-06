@@ -8,23 +8,20 @@ import (
 
 func main() {
 	numbers := []int{1, 2, 3}
-	sum, isOdd := getSum(numbers)
-	fmt.Println(sum, isOdd)
+	sum := getSum(numbers)
+	fmt.Println(sum)
 
 	array.PrintNumbers(numbers)
 }
 
-func getSum(numbers []int) (int, bool) {
+// Lets declare a function that returns the sum of all numbers passed in
+// through a slice.
+func getSum(numbers []int) int {
 	var sum int
-	var isOdd bool
 
 	for _, n := range numbers {
-		sum = sum + n
+		sum += n
 	}
 
-	if sum%2 != 0 {
-		isOdd = true
-	}
-
-	return sum, isOdd
+	return sum
 }
